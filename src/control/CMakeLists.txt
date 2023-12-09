@@ -174,6 +174,7 @@ catkin_install_python(PROGRAMS
   src/status_info.py
   src/imu_info.py
   src/joycon_motion.py
+  src/joycon.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
