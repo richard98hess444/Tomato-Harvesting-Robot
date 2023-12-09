@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_sinica_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - base_to_link1
+      - link1_to_link2
+      - link2_to_link3
+      - three_to_eef
+  - name: fake_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - three_to_eef
+initial:  # Define initial robot poses per group
+  - group: sinica_arm
+    pose: pose1

@@ -1,0 +1,10 @@
+controller_list:
+  - name: arm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - base_to_link1
+      - link1_to_link2
+      - link2_to_link3
+      - three_to_eef
