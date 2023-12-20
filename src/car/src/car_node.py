@@ -112,38 +112,6 @@ if __name__ == '__main__':
     try:
         while (not joycon.triggered): pass
         print('Start to Remote Control')
-        
-        # while (not rospy.is_shutdown()):
-        #     # -1176 < cmdR < 1074
-        #     # -1087 < cmdR < 1059
-        #     cmdR = heavisideFilter(heavisideFilter(joycon.right_joycon - cmdR0) + 100)
-        #     cmdL = heavisideFilter(joycon.left_joycon - cmdL0)
-
-        #     pwmR = joycon2PWM(cmdR, 1, pwm_ratio)
-        #     pwmL = joycon2PWM(cmdL, 1, pwm_ratio)
-
-        #     # region[not done]
-        #     # This part is under construction
-        #     if (len(pwmBuff) < 5): 
-        #         pwmBuff = np.append(pwmBuff, [pwmR, pwmL])
-        #     else:
-        #         pwmBuffR = pwmBuff.reshape(2,-1).T[0]
-        #         pwmBuffL = pwmBuff.reshape(2,-1).T[1]
-        #         if (np.abs(pwmBuffR[-1] - pwmBuffR[0]) > pwm_threshold or 
-        #             np.abs(pwmBuffL[-1] - pwmBuffL[0]) > pwm_threshold):
-        #             pwmSmoothR = smoothPWM(pwmBuffR[-1], pwmBuffR[0], pwm_threshold)
-        #             pwmSmoothL = smoothPWM(pwmBuffL[-1], pwmBuffL[0], pwm_threshold)
-        #             for i, j in zip(pwmSmoothR, pwmSmoothL):
-        #                 motorJoyconCmd(i, j)
-        #                 print(i, j)
-        #                 rospy.sleep(0.1)
-        #     # endregion[not done]
-
-        #     motorJoyconCmd(pwmR, pwmL)
-        #     # print(pwmL, pwmR)
-        #     # print(cmdL, cmdR)
-        #     rospy.sleep(0.1)
-
         while (not rospy.is_shutdown()):
             pl, rb = joyconStatus(joycon)
             matrixA = np.array([[-1, 1],
