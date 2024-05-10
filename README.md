@@ -1,5 +1,10 @@
 # Tomato-Harvesting-Robot
 
+## ICRA2024 Paper Accepted!
+Our works on this tomato harvesting robot has been accepted by ICRA2024! The link of the paper will come as soon as it is available on IEEE explore. Here is a short demo video about the project.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/sg5Gc-BE53Q/0.jpg)](https://www.youtube.com/watch?v=sg5Gc-BE53Q)
+
 ## 1. Create a ROS package
 Download the repository and make the package with the following
 ```
