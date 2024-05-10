@@ -14,7 +14,7 @@ git clone https://github.com/richard98hess444/Tomato-Harvesting-Robot.git
 catkin_make
 ```
 
-## 2. Introduction of ```control``` package
+## 2. Introduction to ```control``` package
 The files currently used are 
 * data_trans.py
 * imu_info.py
@@ -22,26 +22,26 @@ The files currently used are
 
 These are the files for the motion control of the manipulator.
 
-## 3. Introduction of ```camera``` package
+## 3. Introduction to ```camera``` package
 The files currently used are
 * center_depth_node.py
 
 These are the files for the tomato depth estimation.
 
-## 4. Introduction of ```yolo_detect``` package
+## 4. Introduction to ```yolo_detect``` package
 The files currently used are
 * detect.py
 * detect_usb.py
 
 These are the files for the tomato perception.
 
-## 5. Introduction of ```tmt_robot``` package
+## 5. Introduction to ```tmt_robot``` package
 The files currently used are
 * demo.launch
 
 API from the Moveit.
 
-## 6. Introduction of ```car``` package
+## 6. Introduction to ```car``` package
 The files currently used are
 * car_node.py
 
